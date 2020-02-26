@@ -1,1 +1,16 @@
+application:
+  clients:
+    hostname: localhost
+    scheme: http
+    httpPort: 9200
+    containerPort: 9200
+  index:
+    name: play-list
+    shard: 2
+    replica: 1
+    from: 0
+    size: 5
+    timeout: 60
 
+server:
+  port: 8081
